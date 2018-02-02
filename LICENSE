@@ -1,3 +1,36 @@
 
+# 介绍
+MOOC 使用React构建一款音乐播放器  <br>
+# 参考资源：
+## 特别感谢 <br>
+https://github.com/RiversCoder/react_music_player <br>
+
+# 技术栈
+* `React `框架
+* `ES6`语法
+* `YEOMAN` 前端工具   [The web's scaffolding tool for modern webapps | Yeoman]( http://yeoman.io/)
+* `Webpack` 前端自动化打包工具
+* `HTML5/CSS3`
+* `less`编辑器
+# 项目搭建
+1 在github上创建react-music-player仓库，通过 `git clone https://github.com/YammyOne/react-music-player.git` 把项目拉到本地。<br>
+2 使用`npm init`获取项目的`package.json`文件，`npm install`安装该文件中的依赖<br>
+3 配置` webpack.config.js`和`server.js`文件<br>
+4 创建项目需要的所有组件，实现组件之间的通信和页面间的路由<br>
+# 项目发布到github
+
+## 项目提交到 Git 仓库
+` git status` <br>
+` git add .` <br>
+`git commit -m 'a simple music player by react'` <br>
+
+## 推送到 GitHub Page：
+` git push`<br>
+
+# 遇到的问题
+## 1 fatal: Unable to create '/path/my_proj/.git/index.lock': File exists.
+ 解决办法：在`.git`同级目录，执行`rm -f .git/index.lock` （或者`rm -f git/index.lock`） 删除后可提交。 <br>
+## 2 再次提交报错: `nothing added to commit but untracked files present`
+ 解决办法：这是git没有把提交的文件加载进来(git add xx)，但是把需要提交的文件都列出来了，只需要用git add XXX(文件名) 把需要提交的文件加上 ，然后`git commit -m "xx"`,再`git push -u origin master`重新提交就可以了<br>
 
 
